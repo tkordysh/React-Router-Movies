@@ -5,4 +5,11 @@ import './index.css';
 import App from './App';
 
 // You'll need to wrap <App /> for routing to work
-ReactDOM.render(<App />, document.getElementById('root'));
+
+import { BrowserRouter as Router } from 'react-router-dom';
+
+ReactDOM.render(
+    <Router>
+         <App />
+    </Router>
+, document.getElementById('root'));
